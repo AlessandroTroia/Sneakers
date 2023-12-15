@@ -1,0 +1,275 @@
+:root{
+    --main: #c24036;
+    --sec: #676767;
+    --ter: rgba(36, 36, 226, 0.632); 
+    --lk: chartreuse;
+    --font: 'Sedgwick Ave Display';
+    --font2: 'Roboto Condensed', sans-serif;
+    --font3: 'Dosis', sans-serif;
+}
+/* titoli e personalizzazioni */
+h1,h2,h3,h4,h5{
+    font-family:var(--font);
+}
+h6{
+    font-family: var(--font2) ;
+}
+h3{
+    margin: 80px;
+    font-size: 2rem;
+}
+/* colore background body */
+body{
+    background-color: #f3f3f3;
+}
+/* parte spedizione gratuita */
+.spedizioneGratuita{
+    width: 100%;
+    height: 6vh;
+    background-image: url(/public/img/snks/rose.png);
+    background-size: cover;
+    border-bottom: #000000;
+    border-bottom-style:ridge;
+    font-family: var(--font3);
+}
+/* parte header con sfondo */
+.header{
+    background:linear-gradient(to top, #f3f3f3 1%, transparent 10%), url(/public/img/snks/sneakers.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+/* parte navbar con loghini */
+#linknav{
+    text-decoration: none;
+    color: #050505;
+    font-family: var(--font2);
+}
+#linknav:hover{
+    color: var(--main);
+}
+.navbar-brand{
+    font-family: var(--font);
+    color: black;
+    font-size: 2rem;
+}
+.navbar-brand:hover{
+    color: var(--main);
+}
+.account{
+    color: #050505;
+}
+.account:hover{
+    color: var(--main);   
+}
+.shopping{
+    color: #050505;
+}
+.shopping:hover{
+    color: var(--main);   
+}
+.dimensioneofferte{
+    height: 100vh;
+    margin-top: 100px;
+}
+#linkchicago{
+    text-decoration: none;
+    color: black;
+    font-family: var(--font);
+    font-size: 30px;
+    animation: opaco 3s 1;
+}
+#linkchicago:hover{
+    color: var(--main)
+}
+#linkcard{
+    text-decoration: none;
+    color:black
+}
+#linkcard:hover{
+    color: var(--ter);
+}
+/* footer */
+.linkfooter{
+    font-family: var(--font2);
+    text-decoration: none;
+    color: whitesmoke;
+}
+.linkfooter:hover{
+    color: var(--lk);
+}
+.space{
+    margin-top: 80px;
+}
+.footer{
+    background-color: #676767;
+}
+.txt{
+    color: var(--lk);
+}
+.height{
+    height: 15vh;
+}
+/* animazione titolo */
+.titolo{
+    font-family: var(--font);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    animation: opaco 3s 1 ;
+}
+@keyframes opaco{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+
+.ft{
+    font-family: var(--font);
+}
+/* sfondo card */
+.bg{
+    height: 100%;
+}
+.titoliSchede{
+    font-family: var(--font);
+}
+.testo{
+    font-family: var(--font2);
+}
+.dimensioni{
+    height: 70px;
+    background-color: #676767;
+}
+li{
+    list-style: none;
+}
+.fontBottone{
+    font-family: var(--font2);
+}
+/* animazione immagine */
+.hover1:hover {
+    animation: moveImage 1s infinite;
+  }
+
+  @keyframes moveImage {
+    0% {
+      transform: translateY(0);
+    }50%{
+      transform: translateY(-40px);
+    }100%{
+      transform: translateY(0);
+    }
+  }
+  /* rimozione counter laterale per size */
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .sizeplace{
+    width: 32vw;
+  }
+  /* navbar scroll */
+  .navbarScroll{
+    opacity: 0.5;
+  }
+  /* dimensione box */
+  .db{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border: black 2px solid;
+    margin-inline: 20px;
+    margin-top: 15px;
+    font-family: var(--font);
+  }
+  .margine{
+    margin-bottom: 20px !important;
+  }
+  /* background form contattaci */
+  .backgroundform{
+    height: 100vh;
+    background-image: url(/public/img/snks/imgform.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+  }
+  .bgform{
+    height: 70vh;
+    background-color: #676767c9;
+    margin-top: 50px;
+  }
+  /* dettagli per la lista a comparsa */
+  #contenutoshow{
+    font-family: var(--font3);
+  }
+  /* sezione klarna */
+  .dimensioniSezioneKlarna{
+    background-color: #dedede;
+    height: 90vh;
+    margin-top: 20px;
+  }
+  /* login */
+  .login{
+    width: 70vw;
+    height: 100vh;
+    border-radius: 5%;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+  .loginback{
+    height: 100vh;
+    background-image: url(./media/bgallsnks.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 4% ;
+    border-bottom-left-radius: 4%;
+  }
+  .loginsign{
+    height: 100vh;
+    background-image: url(./media/sfondologin.jpg);
+    border-top-right-radius: 6% ;
+    border-bottom-right-radius: 6%;
+  }
+  .linksignin{
+    text-decoration: none;
+    color:white;
+    font-family: var(--font);
+  }
+  .linksignin:hover{
+    color: chartreuse;
+  }
+  .fontcheckbox{
+    font-family: var(--font2);
+  }
+  /* personalizzazione titoli in show */
+  .personalizzato>h5{
+    font-size: x-large;
+    padding-top: 50px;
+  }
+  .bottonepersonalizzato{
+    margin-top: 30px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 30px;
+  }
+  .bottonepersonalizzato:hover{
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46,229,157,0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  .personalizzato:active{
+    transform: translateY(-1px);
+  }
